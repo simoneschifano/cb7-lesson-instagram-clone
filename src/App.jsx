@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import "./App.css";
 
 import { storiesData } from "./mocks/stories";
@@ -9,6 +10,7 @@ import { postsData } from "./mocks/posts";
 import TopBar from "./components/TopBar";
 import Stories from "./components/Stories";
 import Posts from "./components/Posts";
+import TabBar from "./components/TabBar";
 
 function App() {
   const [stories, setStories] = useState(storiesData);
@@ -20,6 +22,7 @@ function App() {
       <TopBar />
       <Stories user={user} stories={stories} />
       <Posts posts={posts} />
+      <TabBar />
     </>
   );
 }

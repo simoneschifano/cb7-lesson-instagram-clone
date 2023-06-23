@@ -12,6 +12,16 @@ export const postsData = [
         type: "image",
         src: "https://placehold.co/375x375",
       },
+      {
+        id: "media00000",
+        type: "video",
+        src: "https://joy1.videvo.net/videvo_files/video/free/2013-08/large_watermarked/hd0983_preview.mp4",
+      },
+      {
+        id: "media00001",
+        type: "image",
+        src: "https://placehold.co/375x375",
+      },
     ],
     comments: [
       {
