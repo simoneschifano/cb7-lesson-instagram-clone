@@ -16,13 +16,15 @@ const Stories = ({ user, stories }) => {
     setIsModalOpen(true);
   };
   useEffect(() => {
-    setStoryStart(storyStart ? storyStart : false);
+    setStoryStart(storyStart !== false ? storyStart : false);
   }, [storyStart]);
 
   const closeModalStories = () => {
     setIsModalOpen(false);
     setStoryStart(false);
   };
+
+  console.log(storyStart);
 
   return (
     <>
@@ -43,7 +45,7 @@ const Stories = ({ user, stories }) => {
             ))}
         </ul>
       </div>
-      {storyStart && (
+      {storyStart !== false && (
         <ModalStories
           stories={stories}
           isOpen={isModalOpen}
